@@ -35,22 +35,23 @@ body {
   box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
 }
 
+/* это обертка для блока */
 .wrapper {
   max-height: 0;
   overflow: hidden;
   border: 1px solid transparent;
   border-radius: 4px;
-  opacity: 0;
   transition: all 1s;
 }
 
+/* это блок с текстом */
 .collapsible {
   padding: 10px;
 }
 
+/* эти стили добавляются к wrapper при клике */
 .show {
-  max-height: 100%;
+  max-height: 300px;
   border: 1px solid rgb(49 132 253 / 30%);
-  opacity: 1;
   transition: all 2s;
 }
